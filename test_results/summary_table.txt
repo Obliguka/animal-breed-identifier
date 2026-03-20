@@ -1,0 +1,17 @@
+ЗАПРОС                                             РЕЗУЛЬТАТ
+------------------------------------------------------------------------------------------
+images/husky1.jpg                                  {'animal': 'dog', 'breed': 'husky'}
+images/labrador1.jpg                               {'animal': 'dog', 'breed': 'golden retriever'}
+images/german_shepherd1.jpg                        {'animal': 'dog', 'breed': 'german shepherd'}
+images/mainecoon1.jpg                              {'animal': 'cat', 'breed': 'Ragdoll cat'}
+images/british_shorthair1.jpg                      {'animal': 'cat', 'breed': 'Persian'}
+images/sphynx1.jpg                                 {'animal': 'cat', 'breed': 'hairless siamese cat'}
+images/corgi1.jpg                                  {'animal': 'dog', 'breed': 'Corgi'}
+images/dachshund1.jpg                              {'animal': 'dog', 'breed': 'dachshund'}
+images/siberian_cat1.jpg                           {'animal': 'cat', 'breed': 'longhaired cat'}
+images/malamute1.jpg                               {'animal': 'dog', 'breed': 'husky'}
+рыжий пушистый кот с кисточками на ушах, очень крупный {'animal': 'cat', 'breed': 'russian blue'}
+белая пушистая собака среднего размера с чёрными глазами, похожа на лису {'animal': 'dog', 'breed': 'unknown'}
+маленькая собачка с длинным телом и короткими лапами {'animal': 'dog', 'breed': 'unknown'}
+лысая кошка с морщинистой кожей и большими ушами   {'animal': 'cat', 'breed': 'russian blue'}
+собака с чёрно-подпалым окрасом, стоячими ушами и короткой шерстью {'animal': 'dog', 'breed': 'unknown'}

@@ -44,7 +44,7 @@ async def predict(file: UploadFile = File(...)):
         
         return result       
     except Exception as e:
-        latency_ms = (time.time() - start_time) * 1000  # 👈 ИСПРАВЛЕНО
+        latency_ms = (time.time() - start_time) * 1000  
         metrics.log_request(
             endpoint=endpoint,
             status="error",
@@ -91,7 +91,6 @@ async def predict_text(query: TextQuery):
 
 @app.get("/metrics")
 async def get_metrics():
-    """Возвращает собранную статистику"""
     return metrics.get_stats()        
 
 

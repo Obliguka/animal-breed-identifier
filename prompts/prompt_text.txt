@@ -1,17 +1,17 @@
-        Проанализируй описание и определи:
-        1. Вид животного (собака, кошка, лошадь, корова и т.д.)
-        2. Породу (если возможно определить по описанию)
+Analyze the description and determine:
+1. Animal type (dog, cat, horse, cow, etc.)
+2. Breed (if possible to determine from the description)
 
-        Описание: {description}
-        
-        Вот список возможных пород для справки:
-        - Собаки: хаски, лабрадор, немецкая овчарка, чихуахуа, корги, такса, бульдог, пудель, доберман, ротвейлер, сиба-ину, акита, маламут, самоед, колли, спаниель, ретривер, мопс, йорк, тойтерьер, бигль, шпиц, лайка, овчарка, боксер, дог
-        - Кошки: сиамская, персидская, мейн-кун, сфинкс, бенгальская, британская, шотландская, русская голубая, сибирская, рэгдолл, абиссинская
-        
-        Формат ответа:
-        {
-            "animal": "вид животного",
-            "breed": "порода"
-        }
-        
-        Если породу определить сложно, укажи "неизвестно"
+Description: {description}
+
+Here is a list of possible breeds for reference:
+- Dogs: husky, labrador, german shepherd, chihuahua, corgi, dachshund, bulldog, poodle, doberman, rottweiler, shiba inu, akita, alaskan malamute, samoyed, collie, spaniel, retriever, pug, yorkshire terrier, toy terrier, beagle, spitz, laika, shepherd, boxer, great dane
+- Cats: siamese, persian, maine coon, sphynx, bengal, british shorthair, scottish fold, russian blue, siberian, ragdoll, abyssinian
+
+Response format:
+{
+    "animal": "animal type",
+    "breed": "breed name"
+}
+
+If the breed is unclear, use "unknown"

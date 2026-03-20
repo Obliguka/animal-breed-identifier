@@ -8,7 +8,6 @@ class MetricsCollector:
         self.log_file = log_file
     
     def log_request(self, endpoint, status, latency_ms, error=None, metadata=None):
-        """Логирует информацию о запросе"""
         log_entry = {
             "timestamp": datetime.now().isoformat(),
             "endpoint": endpoint,
@@ -23,7 +22,6 @@ class MetricsCollector:
             f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
     
     def get_stats(self):
-        """Возвращает статистику (среднее время, доля ошибок)"""
         if not os.path.exists(self.log_file):
             return {"error": "Нет данных"}
         

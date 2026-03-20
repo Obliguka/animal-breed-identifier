@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "type": "image",
+        "file": "images/husky1.jpg",
+        "expected_animal": "dog",
+        "expected_breed": "husky"
+    },
+    {
+        "id": 2,
+        "type": "image",
+        "file": "images/labrador1.jpg",
+        "expected_animal": "dog",
+        "expected_breed": "labrador"
+    },
+    {
+        "id": 3,
+        "type": "image",
+        "file": "images/german_shepherd1.jpg",
+        "expected_animal": "dog",
+        "expected_breed": "german shepherd"
+    },
+    {
+        "id": 4,
+        "type": "image",
+        "file": "images/mainecoon1.jpg",
+        "expected_animal": "cat",
+        "expected_breed": "maine coon"
+    },
+    {
+        "id": 5,
+        "type": "image",
+        "file": "images/british_shorthair1.jpg",
+        "expected_animal": "cat",
+        "expected_breed": "british shorthair"
+    },
+    {
+        "id": 6,
+        "type": "image",
+        "file": "images/sphynx1.jpg",
+        "expected_animal": "cat",
+        "expected_breed": "sphynx"
+    },
+    {
+        "id": 7,
+        "type": "image",
+        "file": "images/corgi1.jpg",
+        "expected_animal": "dog",
+        "expected_breed": "corgi"
+    },
+    {
+        "id": 8,
+        "type": "image",
+        "file": "images/dachshund1.jpg",
+        "expected_animal": "dog",
+        "expected_breed": "dachshund"
+    },
+    {
+        "id": 9,
+        "type": "image",
+        "file": "images/siberian_cat1.jpg",
+        "expected_animal": "cat",
+        "expected_breed": "siberian"
+    },
+    {
+        "id": 10,
+        "type": "image",
+        "file": "images/malamute1.jpg",
+        "expected_animal": "dog",
+        "expected_breed": "alaskan malamute"
+    },
+    {
+        "id": 11,
+        "type": "text",
+        "query": "рыжий пушистый кот с кисточками на ушах, очень крупный",
+        "expected_animal": "cat",
+        "expected_breed": "maine coon"
+    },
+    {
+        "id": 12,
+        "type": "text",
+        "query": "белая пушистая собака среднего размера с чёрными глазами, похожа на лису",
+        "expected_animal": "dog",
+        "expected_breed": "samoyed"
+    },
+    {
+        "id": 13,
+        "type": "text",
+        "query": "маленькая собачка с длинным телом и короткими лапами",
+        "expected_animal": "dog",
+        "expected_breed": "dachshund"
+    },
+    {
+        "id": 14,
+        "type": "text",
+        "query": "лысая кошка с морщинистой кожей и большими ушами",
+        "expected_animal": "cat",
+        "expected_breed": "sphynx"
+    },
+    {
+        "id": 15,
+        "type": "text",
+        "query": "собака с чёрно-подпалым окрасом, стоячими ушами и короткой шерстью",
+        "expected_animal": "dog",
+        "expected_breed": "doberman"
+    }
+]
