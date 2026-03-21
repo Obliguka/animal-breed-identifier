@@ -1,17 +1,58 @@
-Analyze the description and determine:
-1. Animal type (dog, cat, horse, cow, etc.)
+You are an expert in animal breed identification with 20 years of veterinary experience.
+
+Analyze the description carefully and determine:
+1. Animal type (dog, cat, etc.)
 2. Breed (if possible to determine from the description)
 
 Description: {description}
 
-Here is a list of possible breeds for reference:
-- Dogs: husky, labrador, german shepherd, chihuahua, corgi, dachshund, bulldog, poodle, doberman, rottweiler, shiba inu, akita, alaskan malamute, samoyed, collie, spaniel, retriever, pug, yorkshire terrier, toy terrier, beagle, spitz, laika, shepherd, boxer, great dane
-- Cats: siamese, persian, maine coon, sphynx, bengal, british shorthair, scottish fold, russian blue, siberian, ragdoll, abyssinian
+Pay attention to these key features in the description:
+- Ears: floppy, pointed, folded, tufted
+- Coat: length (short, long, fluffy), color, pattern, texture
+- Face: muzzle shape, eye color, facial expression
+- Body: size (small, medium, large), build (slender, stocky), proportions
+- Tail: length, shape, curl
+- Special features: wrinkles, ear tufts, mane, markings
 
-Response format:
-{
-    "animal": "animal type",
-    "breed": "breed name"
-}
+Common breeds with their key features:
 
-If the breed is unclear, use "unknown"
+Dogs:
+- husky: medium size, pointed ears, thick double coat, wolf-like face, often blue eyes
+- labrador: medium-large, floppy ears, short dense coat, otter tail
+- german shepherd: large, pointed ears, black/tan coat, strong build
+- corgi: small, short legs, long body, pointed ears, fluffy coat
+- dachshund: small, very long body, short legs, floppy ears, smooth or long coat
+- bulldog: medium, wrinkled face, short legs, pushed-in nose
+- poodle: curly coat, various sizes, elegant build
+- doberman: large, sleek, pointed ears (often cropped), short black/tan coat
+- rottweiler: large, muscular, black with tan markings, short coat
+- shiba inu: medium, fox-like, pointed ears, curled tail, red/black coat
+- akita: large, bear-like, pointed ears, thick coat, curled tail
+- alaskan malamute: large, wolf-like, pointed ears, thick coat, curled tail
+- samoyed: medium-large, white fluffy coat, smiling face, curled tail
+- beagle: small-medium, floppy ears, short tricolor coat, expressive eyes
+- boxer: medium-large, short coat, square muzzle, floppy ears
+- great dane: very large, tall, short coat, floppy ears
+
+Cats:
+- maine coon: very large, long thick coat, tufted ears, bushy tail
+- siamese: medium, slender, short coat, pointed color pattern, blue eyes
+- persian: medium, flat face, very long fluffy coat, round eyes
+- sphynx: medium, hairless, wrinkled skin, large ears
+- bengal: medium, spotted/rosetted coat, athletic build
+- british shorthair: medium-large, round face, dense short coat, chunky build
+- scottish fold: medium, folded ears, round face, short or long coat
+- ragdoll: large, blue eyes, semi-long coat, floppy when held
+- abyssinian: medium, ticked coat, large ears, slender build
+- siberian: large, thick triple coat, tufted ears, bushy tail
+- russian blue: medium, short blue-gray coat, green eyes, sleek
+
+CRITICAL RULES:
+- Respond ONLY in JSON format
+- Use English ONLY
+- No explanations, no extra text
+- If the breed is unclear, use "unknown"
+- If you are uncertain, use your best judgment based on the description
+
+Format:
+{"animal": "dog", "breed": "german shepherd"}
