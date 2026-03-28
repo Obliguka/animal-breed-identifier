@@ -2,9 +2,9 @@
 API для определения вида и породы животных по фотографии или текстовому описанию с использованием локальной модели LLaVA через Ollama.
 
 Возможности:
-- Определение по фото (`POST /predict`)
+- Определение по фото (`POST /predict`) 
 - Определение по текстовому описанию (`POST /predict/text`)
-- Schema-Guided Reasoning (SGR)** — структурированный вывод с объяснением
+- Schema-Guided Reasoning (SGR) — структурированный вывод с объяснением 
 - Локально
 - Ответы в формате JSON
 
@@ -16,8 +16,8 @@ API для определения вида и породы животных по
 5. Запустить приложение uvicorn main:app --reload
 
 Проект:
-- main.py: Основное API (простой вывод) 
-- main_sgr.py: API с Schema-Guided Reasoning (тут запросы только по фото)
+- main.py: Основное API (простой вывод) на 8080 порту
+- main_sgr.py: API с Schema-Guided Reasoning (тут запросы только по фото) на 8081 порту
 - requests_ollama.py: класс для работы с Ollama
 - metrics.py: Сбор метрик
 - test_runner.py: Запуск тестов
