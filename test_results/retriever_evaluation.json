@@ -1,0 +1,243 @@
+{
+  "test_set_size": 29,
+  "metrics": {
+    "precision@3": 33.3,
+    "recall@3": 100.0,
+    "mrr": 0.908,
+    "ndcg@3": 0.829
+  },
+  "individual_results": [
+    {
+      "id": 1,
+      "source": "photo_husky",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.842
+    },
+    {
+      "id": 2,
+      "source": "photo_labrador",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 3,
+      "source": "photo_german_shepherd",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 4,
+      "source": "photo_corgi",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 1.0
+    },
+    {
+      "id": 5,
+      "source": "photo_dachshund",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 1.0
+    },
+    {
+      "id": 6,
+      "source": "photo_bulldog",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 7,
+      "source": "photo_doberman",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 8,
+      "source": "photo_rottweiler",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.938
+    },
+    {
+      "id": 9,
+      "source": "photo_samoyed",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 10,
+      "source": "photo_beagle",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 11,
+      "source": "photo_shiba",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 12,
+      "source": "photo_malamute",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 1.0
+    },
+    {
+      "id": 13,
+      "source": "photo_maine_coon",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 1.0
+    },
+    {
+      "id": 14,
+      "source": "photo_siamese",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 15,
+      "source": "photo_persian",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 16,
+      "source": "photo_sphynx",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 17,
+      "source": "photo_british",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 18,
+      "source": "photo_scottish",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 1.0
+    },
+    {
+      "id": 19,
+      "source": "photo_ragdoll",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 20,
+      "source": "photo_siberian",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 1.0
+    },
+    {
+      "id": 21,
+      "source": "photo_russian_blue",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 0.75
+    },
+    {
+      "id": 22,
+      "source": "edge_malamute_vs_husky",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 0.5,
+      "ndcg@3": 0.875
+    },
+    {
+      "id": 23,
+      "source": "edge_dachshund_vs_corgi",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 0.5,
+      "ndcg@3": 0.875
+    },
+    {
+      "id": 24,
+      "source": "edge_maine_coon_vs_siberian",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 1.0
+    },
+    {
+      "id": 25,
+      "source": "text_maine_coon",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 1.0
+    },
+    {
+      "id": 26,
+      "source": "text_samoyed",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 0.333,
+      "ndcg@3": 0.375
+    },
+    {
+      "id": 27,
+      "source": "text_dachshund",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 0.5,
+      "ndcg@3": 0.875
+    },
+    {
+      "id": 28,
+      "source": "text_sphynx",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 1.0,
+      "ndcg@3": 1.0
+    },
+    {
+      "id": 29,
+      "source": "text_doberman",
+      "precision@3": 33.3,
+      "recall@3": 100.0,
+      "mrr": 0.5,
+      "ndcg@3": 0.5
+    }
+  ]
+}
