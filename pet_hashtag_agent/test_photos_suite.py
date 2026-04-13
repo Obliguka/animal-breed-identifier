@@ -27,5 +27,7 @@ photo_hashtag_tests = [
 text_only_tests = [
     {"id": 101, "input": "Покажи мою статистику", "expected_tool": "get_user_stats"},
     {"id": 102, "input": "Сколько запросов я сделал?", "expected_tool": "get_user_stats"},
-    {"id": 103, "input": "Как испечь пиццу?", "expected_tool": None, "expected_hitl": True},
+    {"id": 103, "input": "Как испечь пиццу?", "expected_hitl": True},
+    {"id": 104, "input": "Моя статистика использования", "expected_tool": "get_user_stats"},
+    {"id": 105, "input": "Статистика", "expected_tool": "get_user_stats"}
 ]

@@ -88,7 +88,7 @@ def evaluate():
         text_results.append({
             "id": query["id"],
             "input": query["input"],
-            "expected": query.get("expected_tool", "hitl"),
+            "expected": "hitl" if query.get("expected_hitl") else query.get("expected_tool"),
             "called": tool_called,
             "correct": tool_correct,
             "latency": round(latency, 3),
@@ -97,18 +97,49 @@ def evaluate():
         status = "+" if tool_correct else "-"
         print(f"[{query['id']}] {status} {query['input'][:40]} -> {tool_called} ({latency:.3f} сек)")
 
-    print("РЕЗУЛЬТАТЫ ОЦЕНКИ АГЕНТА")
-    total_complex = len(complex_results)
-    correct_complex = sum(1 for r in complex_results if r["correct"])
-    print(f"1.фото + хештеги: {correct_complex}/{total_complex} ({correct_complex/total_complex*100:.1f}%)")
     
+    """total_complex = len(complex_results)
+    correct_complex = sum(1 for r in complex_results if r["correct"])
     total_text = len(text_results)
     correct_text = sum(1 for r in text_results if r["correct"])
-    print(f"2. Текстовые запросы (статистика/HITL): {correct_text}/{total_text} ({correct_text/total_text*100:.1f}%)")
-    
     all_latencies = [r.get("latency_breed", 0) + r.get("latency_hashtags", 0) for r in complex_results] + [r["latency"] for r in text_results]
     avg_latency = sum(all_latencies) / len(all_latencies) if all_latencies else 0
-    print(f"3. Среднее время ответа: {avg_latency:.3f} сек")
+    tool_selection_results = [r for r in text_results if r["expected"] != "hitl"]
+    tool_correct = sum(1 for r in tool_selection_results if r["correct"])
+    tool_total = len(tool_selection_results)
+    hitl_results = [r for r in text_results if r["expected"] == "hitl"]
+    hitl_correct = sum(1 for r in hitl_results if r["correct"])
+    hitl_total = len(hitl_results)  """
+
+    total_complex = len(complex_results)
+    correct_complex = sum(1 for r in complex_results if r["correct"])
+    total_text = len(text_results)
+    correct_text = sum(1 for r in text_results if r["correct"])
+    all_latencies = [r.get("latency_breed", 0) + r.get("latency_hashtags", 0) for r in complex_results] + [r["latency"] for r in text_results]
+    avg_latency = sum(all_latencies) / len(all_latencies) if all_latencies else 0
+    
+    tool_selection_results = [r for r in text_results if r["expected"] != "hitl"]
+    tool_correct = sum(1 for r in tool_selection_results if r["correct"])
+    tool_total = len(tool_selection_results)
+    
+    hitl_results = [r for r in text_results if r["expected"] == "hitl"]
+    hitl_correct = sum(1 for r in hitl_results if r["correct"])
+    hitl_total = len(hitl_results)
+
+    print("РЕЗУЛЬТАТЫ ОЦЕНКИ АГЕНТА")
+    print(f"1. Точность определения породы (фото + хештеги): {correct_complex}/{total_complex} ({correct_complex/total_complex*100:.1f}%)")
+
+    if tool_total > 0:
+        print(f"2. Точность выбора инструмента (статистика): {tool_correct}/{tool_total} ({tool_correct/tool_total*100:.1f}%)")
+    else:
+        print("2. Точность выбора инструмента (статистика): нет данных")
+    
+    if hitl_total > 0:
+        print(f"3. Human-in-the-Loop (неизвестные запросы): {hitl_correct}/{hitl_total} ({hitl_correct/hitl_total*100:.1f}%)")
+    else:
+        print("3. Human-in-the-Loop (неизвестные запросы): нет данных")
+    
+    print(f"4. Среднее время ответа: {avg_latency:.3f} сек")
     
 
 if __name__ == "__main__":
