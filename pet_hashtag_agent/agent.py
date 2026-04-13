@@ -1,4 +1,3 @@
-
 import json
 from tools import *
 
@@ -33,6 +32,24 @@ class SimpleAgent:
 
         print(f"Агент вызвал инструмент: '{tool_name}'")
         return self._execute_tool(tool_name, input_data)
+
+    def think_and_act_with_context(self, user_request: str, known_breed: str = None, known_animal: str = None):
+        user_request_lower = user_request.lower()
+        print(f"\n Агент получил запрос: '{user_request}' (с известной породой: {known_breed})")
+        
+        if "хештег" in user_request_lower or "hashtag" in user_request_lower:
+            platform = "instagram"
+            if "tiktok" in user_request_lower:
+                platform = "tiktok"
+            
+            breed = known_breed if known_breed else "unknown"
+            animal = known_animal if known_animal else "unknown"
+            
+            input_data = HashtagInput(animal=animal, breed=breed, platform=platform)
+            print(f"Агент генерирует хештеги для породы: {breed}")
+            return self._execute_tool("generate_hashtags", input_data)
+        
+        return self.think_and_act(user_request)
 
     def _execute_tool(self, tool_name: str, input_data):
         tool = self.tools.get(tool_name)
