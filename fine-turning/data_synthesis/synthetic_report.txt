@@ -1,0 +1,39 @@
+COVERAGE REPORT
+Всего: 126
+
+--- animal ---
+  dog                 :  66 (~63, 50%) [OK]
+  cat                 :  60 (~63, 50%) [OK]
+
+--- quality ---
+  clean               :  82 (~88, 70%) [OK]
+  noisy               :  44 (~38, 30%) [OK]
+
+--- length ---
+  short               :  33 (~50, 40%) [ОТКЛОНЕНИЕ]
+  medium              :  73 (~50, 40%) [ОТКЛОНЕНИЕ]
+  long                :  20 (~25, 20%) [OK]
+
+--- breed ---
+  husky                    :   7 (~7) [OK]
+  labrador                 :   5 (~7) [OK]
+  german shepherd          :   8 (~7) [OK]
+  corgi                    :   8 (~7) [OK]
+  dachshund                :   7 (~7) [OK]
+  bulldog                  :   7 (~7) [OK]
+  samoyed                  :   7 (~7) [OK]
+  beagle                   :   6 (~7) [OK]
+  shiba inu                :   6 (~7) [OK]
+  rottweiler               :   5 (~7) [OK]
+  maine coon               :   6 (~6) [OK]
+  siamese                  :   8 (~6) [OK]
+  persian                  :   5 (~6) [OK]
+  sphynx                   :   4 (~6) [OK]
+  british shorthair        :   7 (~6) [OK]
+  scottish fold            :   5 (~6) [OK]
+  ragdoll                  :   6 (~6) [OK]
+  siberian                 :   6 (~6) [OK]
+  russian blue             :   7 (~6) [OK]
+  bengal                   :   6 (~6) [OK]
+
+Пород: 20/20
