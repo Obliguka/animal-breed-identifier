@@ -137,7 +137,7 @@ Langfuse (localhost:3000) — трассировка запросов: пром�
 LiteLLM (localhost:4000) — прокси для единого API-формата, смена модели без правки кода, виртуальные ключи с бюджетом
 MetricsCollector — total_requests, avg_latency_ms, p95_latency, error_rate
 
-Полный Docker-стек (мониторинг)
+## Полный Docker-стек (мониторинг)
 В папке docker/ лежит полный стек для продакшен-среды:
 
 cd docker
@@ -154,9 +154,9 @@ docker compose up -d
 | Redis | 6379 | Кэширование |
 | ZooKeeper | 2181 | Координация ClickHouse |
 
-Остановка
+### Остановка
 cd docker
 docker compose down
 
-Примечание
+### Примечание
 Langfuse при перезапуске без volumes потребует повторной регистрации (БД не сохраняется). Для постоянного хранения нужны persistent volumes (добавляются в docker-compose.yaml).
