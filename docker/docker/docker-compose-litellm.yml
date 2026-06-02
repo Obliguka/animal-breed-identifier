@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  litellm-db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: litellm
+      POSTGRES_PASSWORD: litellm
+      POSTGRES_DB: litellm
+    volumes:
+      - litellm-db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  litellm:
+    image: ghcr.io/berriai/litellm:main-latest
+    ports:
+      - "4000:4000"
+    depends_on:
+      - litellm-db
+    environment:
+      DATABASE_URL: postgresql://litellm:litellm@litellm-db:5432/litellm
+      LITELLM_MASTER_KEY: sk-master-key-123
+    volumes:
+      - ./litellm_config.yaml:/app/config.yaml
+    command:
+      - "--config"
+      - "/app/config.yaml"
+      - "--port"
+      - "4000"
+    restart: unless-stopped
+
+volumes:
+  litellm-db-data:

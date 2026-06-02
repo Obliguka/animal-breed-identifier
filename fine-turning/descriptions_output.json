@@ -1,0 +1,102 @@
+[
+  {
+    "photo": "husky1.jpg",
+    "description": "{'animal': 'dog', 'breed': 'husky or malamute', 'confidence': 0.95, 'reasoning': 'The dog in the image has floppy ears, a short coat, and appears to have a muscular build with a curly tail which is characteristic of breeds like huskies and malamutes.'}",
+    "breed": "husky"
+  },
+  {
+    "photo": "labrador1.jpg",
+    "description": "{'animal': 'dog', 'breed': 'labrador', 'confidence': 1.0, 'reasoning': 'The dog in the photo has floppy ears, a short dense coat, and an otter-like tail which are characteristic features of Labradors.'}",
+    "breed": "labrador"
+  },
+  {
+    "photo": "german_shepherd1.jpg",
+    "description": "{'animal': 'dog', 'breed': 'german shepherd', 'confidence': 0.95, 'reasoning': 'The dog in the photo is a large breed with floppy ears, a short and dense coat, a robust body, and a long tail. It has a muscular and athletic build, which is typical of many German Shepherds.'}",
+    "breed": "german shepherd"
+  },
+  {
+    "photo": "corgi1.jpg",
+    "description": "{'animal': 'dog', 'breed': 'labrador', 'confidence': 1.0, 'reasoning': \"the photo shows floppy ears and a short dense coat, which are characteristic of labradors. However, without more information or a clearer view of the dog's features, it is difficult to confidently identify the breed.\"}",
+    "breed": "corgi"
+  },
+  {
+    "photo": "dachshund1.jpg",
+    "description": "{'animal': 'dog', 'breed': 'dachshund', 'confidence': 0.99, 'reasoning': 'the dog in the photo has long legs and a long body, which are characteristic of dachshunds.'}",
+    "breed": "dachshund"
+  },
+  {
+    "photo": "bulldog_1.jpg",
+    "description": "{'animal': 'dog', 'breed': 'bulldog', 'confidence': 0.95, 'reasoning': \"The dog in the image has floppy ears, a short and predominantly white coat with spots of brown, a large and muscular body, a short tail, and is described as a pug. These features strongly resemble those of a bulldog, which is known for its distinctive facial wrinkles and short-muzzle. The dog's overall appearance and features are consistent with the breed characteristics of a bulldog.\"}",
+    "breed": "bulldog"
+  },
+  {
+    "photo": "samoyed_1.jpg",
+    "description": "{'animal': 'dog', 'breed': 'samoyed', 'confidence': 1.0, 'reasoning': 'The dog in the image is characterized by a white fluffy coat, erect ears, bushy tail and muscular body which are typical features of Samoyeds. Its facial expression resembles that of a happy dog, which further supports the identification.'}",
+    "breed": "samoyed"
+  },
+  {
+    "photo": "beagle_1.jpg",
+    "description": "{'animal': 'dog', 'breed': 'beagle', 'confidence': 1.0, 'reasoning': 'The animal is a dog and not a cat or any other animal due to the presence of ears and legs. The features of floppy ears, short coat, lean body, long tail with a slight curl at the end, black nose and spots around the eyes are most commonly associated with beagles. This is because maine coons have tufted ears, bushy tails, rectangular bodies, large paws with tufts, and prominent cheekbones; labs have floppy ears, short dense coats, otter tails; and corgis have short legs, long bodies, pointed ears, and fluffy coats. The features of the dog in the image are consistent with beagles.'}",
+    "breed": "beagle"
+  },
+  {
+    "photo": "shiba_inu_1.jpg",
+    "description": "{'animal': 'dog', 'breed': 'shiba inu', 'confidence': 0.95, 'reasoning': \"The dog in the photo has a fox-like face with pointed ears and a curled tail, which are characteristic features of the Shiba Inu breed. These features, along with the short fluffy fur, are indicative of the breed's genetic traits. The size, body shape, and overall appearance of the dog strongly resemble that of a Shiba Inu.\"}",
+    "breed": "shiba inu"
+  },
+  {
+    "photo": "rottweiler_1.jpg",
+    "description": "{'animal': 'dog', 'breed': 'rottweiler', 'confidence': 1.0, 'reasoning': 'Rottweilers have a distinctive appearance with a robust build, thick coat, and dark coloration. The dog in the image has all these features and is looking directly at the camera, which is characteristic of Rottweilers.'}",
+    "breed": "rottweiler"
+  },
+  {
+    "photo": "mainecoon1.jpg",
+    "description": "{'animal': 'cat', 'breed': 'munchkin cat', 'confidence': 0.95, 'reasoning': 'The image shows a cat with floppy ears, long coat, short tail and striking eyes which are characteristic features of the munchkin cat breed.'}",
+    "breed": "maine coon"
+  },
+  {
+    "photo": "siamese_1.jpg",
+    "description": "{'animal': 'cat', 'breed': 'siamese cat', 'confidence': 1.0, 'reasoning': 'The cat has large pointed ears, a short and sleek coat with darker patches around the face and ears, a medium-sized slender body, a long tail that ends in a curled tip, and striking blue eyes which are characteristic of Siamese cats. There is no indication of any other animal present.'}",
+    "breed": "siamese"
+  },
+  {
+    "photo": "persian_1.jpg",
+    "description": "{'animal': 'cat', 'breed': 'maine coon', 'confidence': 0.95, 'reasoning': 'the long, fluffy coat, large ears, and the overall body structure are characteristic of a maine coon cat. This breed is known for its affectionate and dog-like personality.'}",
+    "breed": "persian"
+  },
+  {
+    "photo": "sphynx1.jpg",
+    "description": "{'animal': 'cat', 'breed': 'sphynx', 'confidence': 1.0, 'reasoning': 'the cat in the photo appears to be a hairless Sphynx cat, as suggested by its short and fluffy coat with long pointed ears, a curled tail, and large eyes. These are characteristic features of Sphynx cats, which makes it highly likely that this is indeed a Sphynx cat.'}",
+    "breed": "sphynx"
+  },
+  {
+    "photo": "british_shorthair1.jpg",
+    "description": "{'animal': 'cat', 'breed': 'maine coon', 'confidence': 0.82, 'reasoning': \"The cat in the image has a round, plump body and a mix of dark and light fur, which are characteristic features of Maine Coons. Additionally, the cat's tail is long and slightly curled at the end, and it has small, perky ears, which is also typical for this breed.\"}",
+    "breed": "british shorthair"
+  },
+  {
+    "photo": "scottish_fold_1.jpg",
+    "description": "{'animal': 'cat', 'breed': 'maine coon', 'confidence': 0.95, 'reasoning': 'The cat has long, fluffy fur, large eyes, and a pattern of black stripes on its face, which are characteristic features of the Maine Coon breed.'}",
+    "breed": "scottish fold"
+  },
+  {
+    "photo": "ragdoll_1.jpg",
+    "description": "{'animal': 'cat', 'breed': 'maine coon', 'confidence': 0.95, 'reasoning': 'long fluffy fur, long ears that are pointy at the tips and slightly rounded at the base, large, round body, bushy tail.'}",
+    "breed": "ragdoll"
+  },
+  {
+    "photo": "siberian_cat1.jpg",
+    "description": "{'animal': 'cat', 'breed': 'long hair cat', 'confidence': 1.0, 'reasoning': \"the image displays a fluffy long-haired cat with a short tail, which is characteristic of the maine coon breed. The cat's tufted ears, bushy tail, and overall appearance are reminiscent of this specific type of cat.\"}",
+    "breed": "siberian"
+  },
+  {
+    "photo": "russian_blue_1.jpg",
+    "description": "{'animal': 'cat', 'breed': 'maine coon', 'confidence': 1.0, 'reasoning': 'The cat in the photo has a long and fluffy coat, tufted ears, bushy tail, rectangular body, large paws with tufts, long fluffy tail, prominent cheekbones, deep chest, affectionate, dog-like personality. These are characteristic features of a maine coon cat.'}",
+    "breed": "russian blue"
+  },
+  {
+    "photo": "bengal_1.jpg",
+    "description": "{'animal': 'cat', 'breed': 'african wildcat', 'confidence': 0.95, 'reasoning': 'The image shows a long-legged, spotted feline with fluffy fur markings, standing on a staircase. This is consistent with the characteristics of an African wildcat, which is known for its distinctive coat pattern and physical features. These cats are not domesticated pets but are wild species native to Africa.'}",
+    "breed": "bengal"
+  }
+]

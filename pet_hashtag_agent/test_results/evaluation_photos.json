@@ -1,0 +1,165 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "file": "husky1.jpg",
+      "expected": "husky",
+      "predicted": "husky",
+      "correct": true,
+      "latency": 17.252
+    },
+    {
+      "id": 2,
+      "file": "labrador1.jpg",
+      "expected": "labrador",
+      "predicted": "golden retriever",
+      "correct": false,
+      "latency": 8.941
+    },
+    {
+      "id": 3,
+      "file": "german_shepherd1.jpg",
+      "expected": "german shepherd",
+      "predicted": "german shepherd",
+      "correct": true,
+      "latency": 9.896
+    },
+    {
+      "id": 4,
+      "file": "corgi1.jpg",
+      "expected": "corgi",
+      "predicted": "corgi",
+      "correct": true,
+      "latency": 9.64
+    },
+    {
+      "id": 5,
+      "file": "dachshund1.jpg",
+      "expected": "dachshund",
+      "predicted": "dachshund",
+      "correct": true,
+      "latency": 8.958
+    },
+    {
+      "id": 6,
+      "file": "bulldog_1.jpg",
+      "expected": "bulldog",
+      "predicted": "bulldog",
+      "correct": true,
+      "latency": 10.176
+    },
+    {
+      "id": 7,
+      "file": "samoyed_1.jpg",
+      "expected": "samoyed",
+      "predicted": "husky",
+      "correct": false,
+      "latency": 9.588
+    },
+    {
+      "id": 8,
+      "file": "beagle_1.jpg",
+      "expected": "beagle",
+      "predicted": "beagle",
+      "correct": true,
+      "latency": 10.492
+    },
+    {
+      "id": 9,
+      "file": "shiba_inu_1.jpg",
+      "expected": "shiba inu",
+      "predicted": "shiba inu",
+      "correct": true,
+      "latency": 10.267
+    },
+    {
+      "id": 10,
+      "file": "rottweiler_1.jpg",
+      "expected": "rottweiler",
+      "predicted": "rotweiler",
+      "correct": false,
+      "latency": 9.022
+    },
+    {
+      "id": 11,
+      "file": "mainecoon1.jpg",
+      "expected": "maine coon",
+      "predicted": "maine coon",
+      "correct": true,
+      "latency": 8.989
+    },
+    {
+      "id": 12,
+      "file": "siamese_1.jpg",
+      "expected": "siamese",
+      "predicted": "maine coon",
+      "correct": false,
+      "latency": 9.547
+    },
+    {
+      "id": 13,
+      "file": "persian_1.jpg",
+      "expected": "persian",
+      "predicted": "maine coon",
+      "correct": false,
+      "latency": 9.489
+    },
+    {
+      "id": 14,
+      "file": "sphynx1.jpg",
+      "expected": "sphynx",
+      "predicted": "sphynx",
+      "correct": true,
+      "latency": 8.926
+    },
+    {
+      "id": 15,
+      "file": "british_shorthair1.jpg",
+      "expected": "british shorthair",
+      "predicted": "maine coon",
+      "correct": false,
+      "latency": 10.067
+    },
+    {
+      "id": 16,
+      "file": "scottish_fold_1.jpg",
+      "expected": "scottish fold",
+      "predicted": "siamese",
+      "correct": false,
+      "latency": 8.677
+    },
+    {
+      "id": 17,
+      "file": "ragdoll_1.jpg",
+      "expected": "ragdoll",
+      "predicted": "maine coon",
+      "correct": false,
+      "latency": 8.624
+    },
+    {
+      "id": 18,
+      "file": "siberian_cat1.jpg",
+      "expected": "siberian",
+      "predicted": "maine coon",
+      "correct": false,
+      "latency": 9.389
+    },
+    {
+      "id": 19,
+      "file": "russian_blue_1.jpg",
+      "expected": "russian blue",
+      "predicted": "unknown",
+      "correct": false,
+      "latency": 10.093
+    },
+    {
+      "id": 20,
+      "file": "bengal_1.jpg",
+      "expected": "bengal",
+      "predicted": "",
+      "correct": true,
+      "latency": 9.045
+    }
+  ],
+  "accuracy": 50.0
+}

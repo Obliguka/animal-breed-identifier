@@ -25,7 +25,6 @@ def get_raw_response(image_path):
     return result.get("response") or result.get("description") or result.get("raw_response") or str(result)
 
 def extract_description(raw):
-    """Извлекает чистое описание из ответа (пытается достать 'reasoning')."""
     if not raw:
         return ""
     raw = raw.strip()
@@ -86,7 +85,7 @@ def main():
         })
         print(f"{description[:100]}...")
 
-    # Сохраняем датасет для fine-tuning
+   
     with open("training_data.json", "w", encoding="utf-8") as f:
         json.dump(training_data, f, indent=2, ensure_ascii=False)
 

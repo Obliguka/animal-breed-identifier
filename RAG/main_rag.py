@@ -9,7 +9,7 @@ import uvicorn
 from retriever import retriever
 
 app = FastAPI(title="Animal Identifier with SGR + Retriever")
-
+print("Начало")
 OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "llava"
 TIMEOUT = 60

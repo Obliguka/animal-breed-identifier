@@ -1,0 +1,77 @@
+{
+  "best_global_step": 4,
+  "best_metric": 0.0,
+  "best_model_checkpoint": "./electra-lora-breeds\\checkpoint-4",
+  "epoch": 4.0,
+  "eval_steps": 500,
+  "global_step": 16,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 1.0,
+      "eval_accuracy": 0.0,
+      "eval_loss": 3.044233798980713,
+      "eval_runtime": 0.1212,
+      "eval_samples_per_second": 33.012,
+      "eval_steps_per_second": 8.253,
+      "step": 4
+    },
+    {
+      "epoch": 2.0,
+      "eval_accuracy": 0.0,
+      "eval_loss": 3.0735583305358887,
+      "eval_runtime": 0.1059,
+      "eval_samples_per_second": 37.783,
+      "eval_steps_per_second": 9.446,
+      "step": 8
+    },
+    {
+      "epoch": 2.5,
+      "grad_norm": 1.8156390190124512,
+      "learning_rate": 0.00011000000000000002,
+      "loss": 2.9901634216308595,
+      "step": 10
+    },
+    {
+      "epoch": 3.0,
+      "eval_accuracy": 0.0,
+      "eval_loss": 3.095975875854492,
+      "eval_runtime": 0.1195,
+      "eval_samples_per_second": 33.465,
+      "eval_steps_per_second": 8.366,
+      "step": 12
+    },
+    {
+      "epoch": 4.0,
+      "eval_accuracy": 0.0,
+      "eval_loss": 3.1100127696990967,
+      "eval_runtime": 0.116,
+      "eval_samples_per_second": 34.472,
+      "eval_steps_per_second": 8.618,
+      "step": 16
+    }
+  ],
+  "logging_steps": 10,
+  "max_steps": 20,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 5,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 479259918336.0,
+  "train_batch_size": 4,
+  "trial_name": null,
+  "trial_params": null
+}

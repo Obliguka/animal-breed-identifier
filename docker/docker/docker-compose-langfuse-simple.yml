@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: langfuse
+      POSTGRES_PASSWORD: langfuse_pass
+      POSTGRES_DB: langfuse
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U langfuse"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  langfuse-server:
+    image: langfuse/langfuse:latest
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgresql://langfuse:langfuse_pass@postgres:5432/langfuse
+      NEXTAUTH_SECRET: my-super-secret-key-change-in-prod-12345
+      NEXTAUTH_URL: http://localhost:3000
+      SALT: my-salt-value-change-in-prod-12345
+      TELEMETRY_ENABLED: "false"
+    volumes:
+      - langfuse_data:/app/data
+
+volumes:
+  postgres_data:
+  langfuse_data:
