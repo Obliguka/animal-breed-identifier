@@ -1,0 +1,9 @@
+model_list:
+  - model_name: tinyllama
+    litellm_params:
+      model: ollama/tinyllama
+      api_base: http://host.docker.internal:11434
+  - model_name: llava
+    litellm_params:
+      model: ollama/llava
+      api_base: http://host.docker.internal:11434

@@ -1,0 +1,77 @@
+{
+  "best_global_step": 4,
+  "best_metric": 0.0,
+  "best_model_checkpoint": "./distilbert-lora-breeds\\checkpoint-4",
+  "epoch": 4.0,
+  "eval_steps": 500,
+  "global_step": 16,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "epoch": 1.0,
+      "eval_accuracy": 0.0,
+      "eval_loss": 3.0831501483917236,
+      "eval_runtime": 0.1579,
+      "eval_samples_per_second": 25.325,
+      "eval_steps_per_second": 6.331,
+      "step": 4
+    },
+    {
+      "epoch": 2.0,
+      "eval_accuracy": 0.0,
+      "eval_loss": 3.170565128326416,
+      "eval_runtime": 0.1526,
+      "eval_samples_per_second": 26.212,
+      "eval_steps_per_second": 6.553,
+      "step": 8
+    },
+    {
+      "epoch": 2.5,
+      "grad_norm": 3.5032339096069336,
+      "learning_rate": 0.00011000000000000002,
+      "loss": 3.0015071868896483,
+      "step": 10
+    },
+    {
+      "epoch": 3.0,
+      "eval_accuracy": 0.0,
+      "eval_loss": 3.2314701080322266,
+      "eval_runtime": 0.1604,
+      "eval_samples_per_second": 24.93,
+      "eval_steps_per_second": 6.233,
+      "step": 12
+    },
+    {
+      "epoch": 4.0,
+      "eval_accuracy": 0.0,
+      "eval_loss": 3.2676901817321777,
+      "eval_runtime": 0.1595,
+      "eval_samples_per_second": 25.072,
+      "eval_steps_per_second": 6.268,
+      "step": 16
+    }
+  ],
+  "logging_steps": 10,
+  "max_steps": 20,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 5,
+  "save_steps": 500,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 2157191233536.0,
+  "train_batch_size": 4,
+  "trial_name": null,
+  "trial_params": null
+}

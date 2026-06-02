@@ -1,0 +1,233 @@
+{
+  "complex_tests_accuracy": 30.0,
+  "text_tests_accuracy": 66.7,
+  "avg_response_time": 25.248,
+  "individual_complex_results": [
+    {
+      "id": 1,
+      "file": "husky1.jpg",
+      "expected_breed": "husky",
+      "detected_breed": "unknown",
+      "hashtags_response": "hashtags=['#unknown', '#dog or cat or other animal', '#instagram', '#petlovers'] count=4",
+      "correct": false,
+      "latency_breed": 32.003,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 2,
+      "file": "labrador1.jpg",
+      "expected_breed": "labrador",
+      "detected_breed": "labrador",
+      "hashtags_response": "hashtags=['#labrador', '#dog', '#tiktok', '#fyp'] count=4",
+      "correct": true,
+      "latency_breed": 30.721,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 3,
+      "file": "german_shepherd1.jpg",
+      "expected_breed": "german shepherd",
+      "detected_breed": "german shepherd",
+      "hashtags_response": "hashtags=['#germanshepherd', '#dog', '#instagram', '#petlovers'] count=4",
+      "correct": false,
+      "latency_breed": 34.421,
+      "latency_hashtags": 0.001
+    },
+    {
+      "id": 4,
+      "file": "corgi1.jpg",
+      "expected_breed": "corgi",
+      "detected_breed": "corgi",
+      "hashtags_response": "hashtags=['#corgi', '#dog', '#instagram', '#petlovers'] count=4",
+      "correct": true,
+      "latency_breed": 24.397,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 5,
+      "file": "dachshund1.jpg",
+      "expected_breed": "dachshund",
+      "detected_breed": "dachshund",
+      "hashtags_response": "hashtags=['#dachshund', '#dog', '#instagram', '#petlovers'] count=4",
+      "correct": true,
+      "latency_breed": 29.64,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 6,
+      "file": "bulldog_1.jpg",
+      "expected_breed": "bulldog",
+      "detected_breed": "bulldog",
+      "hashtags_response": "hashtags=['#bulldog', '#dog', '#instagram', '#petlovers'] count=4",
+      "correct": true,
+      "latency_breed": 35.024,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 7,
+      "file": "samoyed_1.jpg",
+      "expected_breed": "samoyed",
+      "detected_breed": "maine coon",
+      "hashtags_response": "hashtags=['#mainecoon', '#dog', '#tiktok', '#fyp'] count=4",
+      "correct": false,
+      "latency_breed": 31.999,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 8,
+      "file": "beagle_1.jpg",
+      "expected_breed": "beagle",
+      "detected_breed": "beagle",
+      "hashtags_response": "hashtags=['#beagle', '#dog', '#instagram', '#petlovers'] count=4",
+      "correct": true,
+      "latency_breed": 23.661,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 9,
+      "file": "shiba_inu_1.jpg",
+      "expected_breed": "shiba inu",
+      "detected_breed": "shiba inu",
+      "hashtags_response": "hashtags=['#shibainu', '#cat', '#instagram', '#petlovers'] count=4",
+      "correct": false,
+      "latency_breed": 26.469,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 10,
+      "file": "rottweiler_1.jpg",
+      "expected_breed": "rottweiler",
+      "detected_breed": "rottweiler",
+      "hashtags_response": "hashtags=['#rottweiler', '#dog', '#instagram', '#petlovers'] count=4",
+      "correct": true,
+      "latency_breed": 23.827,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 11,
+      "file": "mainecoon1.jpg",
+      "expected_breed": "maine coon",
+      "detected_breed": "maine coon",
+      "hashtags_response": "hashtags=['#mainecoon', '#cat', '#instagram', '#petlovers'] count=4",
+      "correct": false,
+      "latency_breed": 35.632,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 12,
+      "file": "siamese_1.jpg",
+      "expected_breed": "siamese",
+      "detected_breed": "samoyed",
+      "hashtags_response": "hashtags=['#samoyed', '#cat', '#instagram', '#petlovers'] count=4",
+      "correct": false,
+      "latency_breed": 29.728,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 13,
+      "file": "persian_1.jpg",
+      "expected_breed": "persian",
+      "detected_breed": "maine coon",
+      "hashtags_response": "hashtags=['#mainecoon', '#cat', '#tiktok', '#fyp'] count=4",
+      "correct": false,
+      "latency_breed": 24.831,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 14,
+      "file": "sphynx1.jpg",
+      "expected_breed": "sphynx",
+      "detected_breed": "siamese",
+      "hashtags_response": "hashtags=['#siamese', '#cat', '#instagram', '#petlovers'] count=4",
+      "correct": false,
+      "latency_breed": 23.461,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 15,
+      "file": "british_shorthair1.jpg",
+      "expected_breed": "british shorthair",
+      "detected_breed": "maine coon",
+      "hashtags_response": "hashtags=['#mainecoon', '#cat', '#instagram', '#petlovers'] count=4",
+      "correct": false,
+      "latency_breed": 35.59,
+      "latency_hashtags": 0.001
+    },
+    {
+      "id": 16,
+      "file": "scottish_fold_1.jpg",
+      "expected_breed": "scottish fold",
+      "detected_breed": "maine coon",
+      "hashtags_response": "hashtags=['#mainecoon', '#cat', '#instagram', '#petlovers'] count=4",
+      "correct": false,
+      "latency_breed": 37.518,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 17,
+      "file": "ragdoll_1.jpg",
+      "expected_breed": "ragdoll",
+      "detected_breed": "maine coon",
+      "hashtags_response": "hashtags=['#mainecoon', '#cat', '#instagram', '#petlovers'] count=4",
+      "correct": false,
+      "latency_breed": 24.814,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 18,
+      "file": "siberian_cat1.jpg",
+      "expected_breed": "siberian",
+      "detected_breed": "maine coon",
+      "hashtags_response": "hashtags=['#mainecoon', '#cat', '#tiktok', '#fyp'] count=4",
+      "correct": false,
+      "latency_breed": 29.125,
+      "latency_hashtags": 0.001
+    },
+    {
+      "id": 19,
+      "file": "russian_blue_1.jpg",
+      "expected_breed": "russian blue",
+      "detected_breed": "unknown",
+      "hashtags_response": "hashtags=['#unknown', '#cat', '#instagram', '#petlovers'] count=4",
+      "correct": false,
+      "latency_breed": 23.271,
+      "latency_hashtags": 0.0
+    },
+    {
+      "id": 20,
+      "file": "bengal_1.jpg",
+      "expected_breed": "bengal",
+      "detected_breed": "unknown",
+      "hashtags_response": "hashtags=['#unknown', '#cat', '#instagram', '#petlovers'] count=4",
+      "correct": false,
+      "latency_breed": 24.557,
+      "latency_hashtags": 0.001
+    }
+  ],
+  "individual_text_results": [
+    {
+      "id": 101,
+      "input": "Покажи мою статистику",
+      "expected": "get_user_stats",
+      "called": "get_user_stats",
+      "correct": true,
+      "latency": 0.001
+    },
+    {
+      "id": 102,
+      "input": "Сколько запросов я сделал?",
+      "expected": "get_user_stats",
+      "called": "hitl",
+      "correct": false,
+      "latency": 0.0
+    },
+    {
+      "id": 103,
+      "input": "Как испечь пиццу?",
+      "expected": null,
+      "called": "hitl",
+      "correct": true,
+      "latency": 0.0
+    }
+  ]
+}

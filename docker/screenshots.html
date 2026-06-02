@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Скриншоты для задания - Langfuse + LiteLLM</title>
+<style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 900px; margin: 20px auto; padding: 20px; background: #f5f5f5; }
+  h1 { color: #2E4057; border-bottom: 3px solid #2E4057; padding-bottom: 10px; }
+  h2 { color: #2E4057; margin-top: 30px; }
+  .screenshot-box { background: white; border: 2px dashed #999; border-radius: 8px; padding: 20px; margin: 15px 0; text-align: center; }
+  .screenshot-box img { max-width: 100%; border: 1px solid #ddd; border-radius: 4px; }
+  .placeholder { background: #e8e8e8; padding: 40px; border-radius: 8px; color: #666; font-size: 18px; }
+  .data-block { background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 13px; white-space: pre-wrap; overflow-x: auto; }
+  .ok { color: #0a0; font-weight: bold; }
+  .url { color: #0066cc; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+  td, th { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  th { background: #2E4057; color: white; }
+  tr:nth-child(even) { background: #f9f9f9; }
+  .instructions { background: #fff3cd; border: 1px solid #ffc107; border-radius: 6px; padding: 15px; margin: 20px 0; }
+</style>
+</head>
+<body>
+
+<h1>Скриншоты для отчёта</h1>
+<p>Открой нужные URL, сделай скриншот (Win+Shift+S) и вставь в отчёт.</p>
+
+<div class="instructions">
+<strong>Как сделать скриншот:</strong> Win+Shift+S → выделить область → скриншот в буфере → Ctrl+V в отчёт
+</div>
+
+<!-- ============== 1 ============== -->
+<h2>1. Langfuse — список трассировок</h2>
+<p>Открой <span class="url">http://localhost:3000</span>, нажми <strong>"Traces"</strong> в левом меню.</p>
+<p>Должны быть видны трассировки. Пример:</p>
+<div class="screenshot-box">
+  <div class="placeholder">📸 Сделай скриншот этой страницы</div>
+</div>
+<p>Данные одной из трассировок:</p>
+<div class="data-block">{
+  "name": "text_predict",
+  "input": {"prompt": "Answer in 3 words: what is the most popular pet?"},
+  "output": "The most popular pet among humans is dogs...",
+  "usage": {"input": 54, "output": 36},
+  "time": "0.751 sec",
+  "model": "tinyllama"
+}</div>
+
+<!-- ============== 2 ============== -->
+<h2>2. LiteLLM — список моделей</h2>
+<p>Открой <span class="url">http://localhost:4000/models</span> (через Postman/curl) или панель <span class="url">http://localhost:4000</span></p>
+<div class="screenshot-box">
+  <div class="placeholder">📸 Сделай скриншот ответа /models</div>
+</div>
+<p>Или скопируй этот ответ как текст:</p>
+<div class="data-block">GET http://localhost:4000/models
+Authorization: Bearer sk-master-key-123
+
+{
+    "data": [
+        {
+            "id": "tinyllama",
+            "object": "model",
+            "created": 1677610602,
+            "owned_by": "openai"
+        }
+    ]
+}</div>
+
+<!-- ============== 3 ============== -->
+<h2>3. LiteLLM — управление бюджетами</h2>
+<p>Открой панель: <span class="url">http://localhost:4000</span> → раздел Keys/Spend</p>
+<div class="screenshot-box">
+  <div class="placeholder">📸 Сделай скриншот страницы управления ключами/бюджетом</div>
+</div>
+<p>Данные созданного ключа:</p>
+<div class="data-block">Ключ: sk-cBV...
+Статус: активен
+Ограничения:
+  - max_budget: $0.0001/день
+  - models: ["tinyllama"]
+  - max_parallel_requests: 1
+
+Текущее состояние после тестов:
+  - spend: $0.00735 (превышен)
+  - budget_duration: 1d
+
+Результат проверки: BUDGET EXCEEDED!
+HTTP 402 возвращается при превышении лимита</div>
+
+<!-- ============== Дополнительно ============== -->
+<h2>4. Проверка HTTP 402 (бюджет превышен)</h2>
+<p>Результат выполнения теста:</p>
+<div class="data-block">=== TEST: HTTP 402 Budget Exceeded ===
+
+BUDGET EXCEEDED! BudgetExceededError caught:
+  http_status=402
+  message=Дневной лимит бюджета исчерпан
+
+=== SUCCESS: HTTP 402 is properly returned! ===</div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+ID    Тип    Запрос                                             Ожидаемый вид      Ожидаемая порода       Результат (animal) Результат (breed)    Успех  Время (сек) Совп. вида Совп. породы
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1     image  images/husky1.jpg                                  dog                husky                                                          FALSE             FALSE      FALSE       
+2     image  images/labrador1.jpg                               dog                labrador                                                       FALSE             FALSE      FALSE       
+3     image  images/german_shepherd1.jpg                        dog                german shepherd                                                FALSE             FALSE      FALSE       
+4     image  images/mainecoon1.jpg                              cat                maine coon                                                     FALSE             FALSE      FALSE       
+5     image  images/british_shorthair1.jpg                      cat                british shorthair                                              FALSE             FALSE      FALSE       
+6     image  images/sphynx1.jpg                                 cat                sphynx                                                         FALSE             FALSE      FALSE       
+7     image  images/corgi1.jpg                                  dog                corgi                                                          FALSE             FALSE      FALSE       
+8     image  images/dachshund1.jpg                              dog                dachshund                                                      FALSE             FALSE      FALSE       
+9     image  images/siberian_cat1.jpg                           cat                siberian                                                       FALSE             FALSE      FALSE       
+10    image  images/malamute1.jpg                               dog                alaskan malamute                                               FALSE             FALSE      FALSE       
+11    text   рыжий пушистый кот с кисточками на ушах, очен...   cat                maine coon                                                     FALSE             FALSE      FALSE       
+12    text   белая пушистая собака среднего размера с чёрн...   dog                samoyed                                                        FALSE             FALSE      FALSE       
+13    text   маленькая собачка с длинным телом и короткими...   dog                dachshund                                                      FALSE             FALSE      FALSE       
+14    text   лысая кошка с морщинистой кожей и большими ушами   cat                sphynx                                                         FALSE             FALSE      FALSE       
+15    text   собака с чёрно-подпалым окрасом, стоячими уша...   dog                doberman                                                       FALSE             FALSE      FALSE       
