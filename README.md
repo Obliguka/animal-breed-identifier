@@ -8,7 +8,7 @@ API для определения вида и породы животных по
 │ └── main_rag.py # API (порт 8001) — точный режим, RAG + BM25
 ├── pet_hashtag_agent/
 │ ├── agent.py # Агент-заглушка (устаревшая версия)
-│ ├── real_agent.py # Агент с ReAct-циклом и <tool_call>
+│ ├── real_agent.py # Агент с ReAct-циклом и `<tool_call>`
 │ └── tools.py # Инструменты агента
 ├── api-wrapper/ # Docker-обёртка для нагрузочного тестирования
 ├── docker/ # Docker-стек: Langfuse + ClickHouse + LiteLLM + Redis
@@ -22,7 +22,7 @@ API для определения вида и породы животных по
 - **POST /predict/text** (порт 8000) — определение по текстовому описанию
 - **POST /predict** (порт 8001) — определение с RAG + ретривером (2 вызова LLaVA, ~120 с), возвращает breed + confidence + reasoning
 - **GET /metrics** (порт 8000) — метрики производительности
-- **AI-агент** — ReAct-цикл на llama3.2-vision: LLM сама выбирает инструменты через <tool_call>
+- **AI-агент** — ReAct-цикл на llama3.2-vision: LLM сама выбирает инструменты через `<tool_call>`
 - **RAG-ретривер** — BM25-поиск по базе 20 пород (Recall@3 = 100%)
 - **Fine-tuning** — LoRA-дообучение ELECTRA/BERT (эксперимент)
 - **Мониторинг** — Langfuse (трассировка), LiteLLM (прокси), MetricsCollector (p95 latency)
@@ -66,9 +66,9 @@ NDCG@3: 0.829
 _____________________________________________________________________________________________
 
 ## Агент
-Использует llama3.2-vision (10.7B) — в отличие от LLaVA, умеет корректно парсить <tool_call>.
+Использует llama3.2-vision (10.7B) — в отличие от LLaVA, умеет корректно парсить `<tool_call>`.
 
-Цикл: Thought → <tool_call> → Python (API) → результат → Thought → <tool_call> → финальный ответ.
+Цикл: Thought → `<tool_call>` → Python (API) → результат → Thought → `<tool_call>` → финальный ответ.
 
 Инструменты:
 
