@@ -144,14 +144,15 @@ cd docker
 docker compose up -d
 Поднимает:
 
-Сервис	        Порт	Назначение
-Langfuse	    3000	Трассировка запросов к LLM
-ClickHouse	    8123	База для хранения трейсов
-PostgreSQL	    5433	БД Langfuse
-LiteLLM	        4000	Прокси для API-запросов к LLM
-MinIO	        9090	S3-хранилище для артефактов
-Redis	        6379	Кэширование
-ZooKeeper	    2181	Координация ClickHouse
+| Сервис | Порт | Назначение |
+|---|---|---|
+| Langfuse | 3000 | Трассировка запросов к LLM |
+| ClickHouse | 8123 | База для хранения трейсов |
+| PostgreSQL | 5433 | БД Langfuse |
+| LiteLLM | 4000 | Прокси для API-запросов к LLM |
+| MinIO | 9090 | S3-хранилище для артефактов |
+| Redis | 6379 | Кэширование |
+| ZooKeeper | 2181 | Координация ClickHouse |
 
 Остановка
 cd docker
