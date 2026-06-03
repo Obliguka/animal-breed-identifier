@@ -1,0 +1,18 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Зависимости агента
+RUN pip install --no-cache-dir requests pydantic
+
+# Код агента
+COPY pet_hashtag_agent/ ./pet_hashtag_agent/
+
+# Override: Ollama на хосте + API8001 по имени контейнера
+RUN sed -i 's|http://localhost:11434|http://host.docker.internal:11434|g' pet_hashtag_agent/real_agent.py
+RUN sed -i 's|http://localhost:8001|http://api8001:8000|g' pet_hashtag_agent/real_agent.py
+
+# Копируем тестовые фото для агента
+COPY test_data/ ./test_data/
+
+CMD ["python", "-u", "pet_hashtag_agent/real_agent.py"]

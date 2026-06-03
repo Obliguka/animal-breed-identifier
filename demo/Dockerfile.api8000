@@ -1,0 +1,19 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Зависимости (из api-wrapper/requirements.txt + langfuse)
+COPY api-wrapper/requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir langfuse litellm pillow python-dotenv openai
+
+# Код проекта
+COPY main.py llm_client.py requests_ollama.py metrics.py ./
+COPY prompts/ ./prompts/
+COPY demo/direct_text.py demo/run_demo.py ./
+
+# Override Ollama URL: в контейнере стучимся к хостовой Ollama
+RUN sed -i 's|http://localhost:11434|http://host.docker.internal:11434|g' main.py
+
+EXPOSE 8000
+CMD ["python", "run_demo.py"]

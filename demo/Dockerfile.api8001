@@ -1,0 +1,18 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Зависимости
+RUN pip install --no-cache-dir fastapi uvicorn pydantic python-multipart requests
+
+# Код RAG-сервиса
+COPY RAG/ ./RAG/
+
+# Чтобы from retriever import retriever работал из папки RAG/
+ENV PYTHONPATH=/app/RAG
+
+# Override Ollama URL: стучимся к хостовой Ollama
+RUN sed -i 's|http://localhost:11434|http://host.docker.internal:11434|g' RAG/main_rag.py
+
+EXPOSE 8000
+CMD ["uvicorn", "RAG.main_rag:app", "--host", "0.0.0.0", "--port", "8000"]
